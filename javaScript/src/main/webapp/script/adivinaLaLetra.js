@@ -22,12 +22,14 @@ window.onload = function () {
     crearBotones();
 
     // Seleccionar todos los botones con la clase "boton-letra"
+    let letraAdivinar=letras[parseInt(Math.random()*26)].toUpperCase();
+    console.log(letraAdivinar);
     let botones = document.querySelectorAll(".boton-letra");
     botones.forEach(letraSeleccionada => {
         // Agregar un evento click a cada botón
         letraSeleccionada.addEventListener("click", function () {
             // Verificar si el valor del botón es "S"
-            if (letraSeleccionada.value == "S") {
+            if (letraSeleccionada.value == letraAdivinar) {
                 // Si es "S", mostrar "Seleccion correcta-Adivinaste!"
                 document.querySelector(".resultado").innerHTML = "Seleccion correcta-Adivinaste!";
             } else {
