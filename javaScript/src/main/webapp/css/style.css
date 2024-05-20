@@ -76,3 +76,6 @@ a {
 #contadorFallas{
     color: black;
 }
+#salir,#nuevaP{
+    display: none;
+}

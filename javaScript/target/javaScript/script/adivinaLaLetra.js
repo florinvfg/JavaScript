@@ -49,7 +49,24 @@ window.onload = function () {
                 }
             }
             if (interruptor){
-                window.location.replace("adivinaLaLetra.jsp");
+                for (let i=0;i<botones.length;i++){
+                    botones[i].disabled=true;
+                    botones[i].style.backgroundColor="blue";
+                }
+
+
+                let nuevaP= document.querySelector("#nuevaP");
+                let salir=document.querySelector("#salir");
+                nuevaP.style.display="block";
+                salir.style.display="block";
+                nuevaP.addEventListener("click",function (){
+                    window.location.replace("adivinaLaLetra.jsp");
+                })
+                salir.addEventListener("click",function (){
+                    window.location.replace("index.jsp");
+                })
+
+
             }
 
         });

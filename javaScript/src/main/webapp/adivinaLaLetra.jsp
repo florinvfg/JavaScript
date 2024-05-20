@@ -26,6 +26,10 @@
    <div id="divLetras" class="col-4"></div>
     <h2 class="resultado"></h2>
     <p id="contadorFallas" class=""></p>
-  </div>
+    <div class="cajaFlex">
+    <button class="boton" id="nuevaP">Nueva Partida</button>
+   <button class="boton" id="salir">Salir a Home</button>
+    </div>
+</div>
 </body>
 </html>
