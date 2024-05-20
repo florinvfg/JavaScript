@@ -22,6 +22,7 @@
     <a href="actividad2_8.jsp" class="boton">Ir a Actividad 2.8</a>
     <a href="horarios.jsp"  class="boton">Ir a Horarios</a>
         <a href="adivinaLaLetra.jsp" class="boton">Adivina la Letra</a>
+        <a href="bombilla.jsp" class="boton">Bombilla</a>
 
      </div>
    </div>
