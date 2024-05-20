@@ -25,18 +25,35 @@ window.onload = function () {
     let letraAdivinar=letras[parseInt(Math.random()*26)].toUpperCase();
     console.log(letraAdivinar);
     let botones = document.querySelectorAll(".boton-letra");
+    let contador=5;
+    let interruptor=false;
     botones.forEach(letraSeleccionada => {
         // Agregar un evento click a cada botón
         letraSeleccionada.addEventListener("click", function () {
             // Verificar si el valor del botón es "S"
+
             if (letraSeleccionada.value == letraAdivinar) {
                 // Si es "S", mostrar "Seleccion correcta-Adivinaste!"
+                document.querySelector("#contadorFallas").innerHTML="";
                 document.querySelector(".resultado").innerHTML = "Seleccion correcta-Adivinaste!";
+                interruptor=true;
             } else {
                 // Si no es "S", mostrar "Sigue intentándolo!"
                 document.querySelector(".resultado").innerHTML = "Sigue intentándolo!";
+                letraSeleccionada.disabled=true;
+                letraSeleccionada.style.backgroundColor="blue";
+                --contador;
+                document.querySelector("#contadorFallas").innerHTML="Quedan "+contador+" intentos";
+                if (contador==0){
+                    interruptor=true;
+                }
             }
+            if (interruptor){
+                window.location.replace("adivinaLaLetra.jsp");
+            }
+
         });
+
     });
 
 }

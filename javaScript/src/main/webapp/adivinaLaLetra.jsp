@@ -25,6 +25,7 @@
       <h1 class="centrado">Adivina la Letra</h1>
    <div id="divLetras" class="col-4"></div>
     <h2 class="resultado"></h2>
+    <p id="contadorFallas" class=""></p>
   </div>
 </body>
 </html>

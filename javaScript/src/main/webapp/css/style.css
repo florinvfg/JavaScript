@@ -73,3 +73,6 @@ a {
 .boton-letra{
     width: 20px;
 }
+#contadorFallas{
+    color: black;
+}
