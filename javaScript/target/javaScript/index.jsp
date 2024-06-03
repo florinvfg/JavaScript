@@ -23,6 +23,7 @@
     <a href="horarios.jsp"  class="boton">Ir a Horarios</a>
         <a href="adivinaLaLetra.jsp" class="boton">Adivina la Letra</a>
         <a href="bombilla.jsp" class="boton">Bombilla</a>
+        <a href="arrays.jsp" class="boton">Arrays</a>
 
      </div>
    </div>
