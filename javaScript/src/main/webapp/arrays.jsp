@@ -24,6 +24,8 @@
     <h1>Estructuras de Arrays</h1>
      <ul class="lista"></ul>
     <select name="colores" id="colores"></select>
+    <label for="colorInput">Selecciona un color</label>
+    <input type="color" id="colorInput" name="colorInput"></input>
 </div>
 <!--<div class="color col-6"></div>-->
 </body>
